@@ -5,19 +5,58 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>p5.js example</title>
-  <style>
-    body {
-      padding: 0;
-      margin: 0;
-    }
-  </style>
+
+  <link rel="stylesheet" href="stylesheet.css"/>
+  
   <script src="libraries/p5.js"></script>
   <script src="sketch.js"></script>
 </head>
 
 <body>
-  <main>
-  </main>
+  <h1>Bauhaus</h1>
+  <h2>DGMD E-12 Assignment 1</h2>
+  <h3>Complements and Shades</h3>
+  
+  <main></main>
+  <p class="right">
+    Click anywhere to change the colors of the circle and background.<br>
+    Click and drag the mouse up or down to slide the circle along the scale.
+  </p>
+
+  <h4>The Inspiration</h4>
+  <img class="float" src="reference.jpg"/>
+  <p>
+    Color Exercise<br>
+    Ludwig Hirschfeld-Mack<br>
+    <a href="https://hvrd.art/o/225115" target="_blank">link to source</a>
+  </p>
+  
+  
+
+  <div class="block">
+    <p>
+      I color matched the two main colors in Hirschfeld-Mack's drawing and I found the difference between each color value.
+      The color of his circle is (R=9, G=32, B=160) and I found the background to be (R+1, G+134, B-10).
+      Every new pair of colors generated on click are that same exact distance apart.
+      Also to mimic Hirschfeld-Mack's work, the scale has 12 steps and there are color-matched red lines across the footer
+      to simulate the font-weight of the scribbled words.
+    </p>
+    <p>
+      This image initially stood out to me on the Harvard Museums site because it reminded me of
+      the first art classes I took while earning my bachelor's at UCF.
+      Remembering learning about tints, shades, and all the other fun color theory principles inspired me
+      to use the grayscale in the drawing to view the shades of the current color in focus (the circle). 
+      I also liked Hirschfeld-Mack's use of the two complimenting colors and enjoy seeing how the parameters set by his choices 
+      affect the randomly generated compliments.
+    </p>
+    <p>
+      I had difficulty setting boundaries for the circle, to confine it within the inner background.
+      I ended up putting margins on top for the circle to hide under, but my original plan
+      was to always have the circle within the inner bounds.
+      I would've liked to do something with the cut-out piece and plan to keep tinkering in the future.
+    </p>
+  </div>
+
 </body>
 
 </html>
